@@ -1,8 +1,9 @@
+let point = 0;
 const hasil = document.querySelectorAll("li img");
 const spin = document.querySelector(".spin");
 const prize = document.querySelector(".text-prize");
 const areaSpin = document.querySelector(".area-spin");
-
+const audio = document.getElementById("myAudio");
 const member = [
   "Raisha",
   "J48IEB",
@@ -13,6 +14,12 @@ const member = [
   "Ella",
   "Amanda",
 ];
+
+function playAudio() {
+  if (audio) {
+    audio.play();
+  }
+}
 
 function getGacha() {
   const gacha = Math.random();
@@ -79,7 +86,13 @@ function putarPrize() {
 }
 
 spin.addEventListener("click", function () {
-  const gachaResults = [getGacha(), getGacha(), getGacha()];
+  if (point === 5 || point === 23 || point === 50 || point === 100) {
+    const guarantee = getGacha();
+    gachaResults = [guarantee, guarantee, guarantee];
+  } else {
+    gachaResults = [getGacha(), getGacha(), getGacha()];
+  }
+  // const gachaResults = [getGacha(), getGacha(), getGacha()];
   spin.disabled = true;
   putarPrize();
   putar(0);
@@ -98,6 +111,7 @@ spin.addEventListener("click", function () {
       gachaResults[1],
       gachaResults[2]
     ));
+    point++;
     console.log(log);
     spin.disabled = false;
   }, 3000);

@@ -6,13 +6,26 @@
     <link href="/dist/output.css" rel="stylesheet" />
     <link rel="icon" href="dist/member/J48IEB.jpg" type="image/x-icon" />
   </head>
-  <body class="h-full">
+  <body
+    class="h-full"
+    style="
+      background-image: repeating-linear-gradient(
+        to right,
+        #e20613,
+        #e20613 2px,
+        transparent 2px,
+        transparent
+      );
+      background-size: 43px 43px;
+      background-color: #be106b;
+    "
+  >
     <div class="h-full flex flex-wrap justify-center items-center">
       <!-- START CONTAINER -->
       <div class="container">
         <!-- Start Prize -->
         <div class="w-60 mx-auto mb-2">
-          <div class="border-2 border-jkt48 rounded-3xl cursor-none">
+          <div class="border-2 border-jkt48 bg-white rounded-3xl cursor-none">
             <h1
               class="text-prize text-5xl font-bold text-jkt48 text-center pb-1"
             >
@@ -23,7 +36,9 @@
         <!-- End Prize -->
 
         <!-- Start Gacha -->
-        <div class="w-80 mx-auto rounded-3xl border-2 border-jkt48">
+        <div
+          class="w-80 mx-auto rounded-3xl border-2 border-jkt48 bg-white from-jkt48 to-seccond"
+        >
           <!-- Start Member -->
           <div class="area-gacha m-5 bg-jkt48 rounded-xl">
             <ul class="flex justify-center gap-2">
@@ -68,10 +83,10 @@
         <!-- End Gacha -->
 
         <!-- START WM -->
-        <h1 class="text-center text-slate-400 text-xs">
+        <h1 class="text-center text-white font-bold text-xs">
           Created By
           <a
-            class="hover:text-jkt48 cursor-pointer"
+            class="hover:text-black cursor-pointer"
             href="https://www.instagram.com/tegarsadewa_/"
             target="_blank"
             >Tegar Sadewa</a

@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         jkt48: "#e20613",
+        seccond: "#be106b",
       },
     },
   },

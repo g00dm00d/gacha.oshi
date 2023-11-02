@@ -5,14 +5,14 @@ const prize = document.querySelector(".text-prize");
 const areaSpin = document.querySelector(".area-spin");
 const audio = document.getElementById("myAudio");
 const member = [
+  "Freya",
+  "Adel",
+  "Zee",
+  "Gita",
   "Raisha",
+  "Marsha",
+  "Flora",
   "J48IEB",
-  "Lyn",
-  "Callie",
-  "Lia",
-  "Indira",
-  "Ella",
-  "Amanda",
 ];
 
 function playAudio() {
@@ -23,13 +23,13 @@ function playAudio() {
 
 function getGacha() {
   const gacha = Math.random();
-  if (gacha < 0.125) return "Raisha";
-  if (gacha >= 0.125 && gacha < 0.25) return "Lyn";
-  if (gacha >= 0.25 && gacha < 0.375) return "Callie";
-  if (gacha >= 0.375 && gacha < 0.5) return "Lia";
-  if (gacha >= 0.5 && gacha < 0.625) return "Indira";
-  if (gacha >= 0.625 && gacha < 0.75) return "Ella";
-  if (gacha >= 0.75 && gacha < 0.875) return "Amanda";
+  if (gacha < 0.125) return "Freya";
+  if (gacha >= 0.125 && gacha < 0.25) return "Adel";
+  if (gacha >= 0.25 && gacha < 0.375) return "Zee";
+  if (gacha >= 0.375 && gacha < 0.5) return "Gita";
+  if (gacha >= 0.5 && gacha < 0.625) return "Raisha";
+  if (gacha >= 0.625 && gacha < 0.75) return "Marsha";
+  if (gacha >= 0.75 && gacha < 0.875) return "Flora";
   return "J48IEB";
 }
 

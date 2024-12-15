@@ -1,1 +1,1 @@
-# gacha.oshie
+# gacha.oshi
